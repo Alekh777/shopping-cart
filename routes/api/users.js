@@ -15,7 +15,7 @@ route.get('/', (req, res)=>{
 })
 
 route.post('/', (req, res)=>{
-    // We will creaet a new user from the req containing name
+    // We will create a new user from the req containing name
     User.create({
         name: req.body.name
     }).then((user)=>{
